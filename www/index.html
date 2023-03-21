@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo</title>
+    <link rel="stylesheet" href="./components/loader.css">
+</head>
+<body>
+<div class="centro">
+        <h1 >Faça o Calculo de Consumo </h1>
+
+        <select class="marca" id="marca">
+            <option value="Ford">Ford</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="VW">VW</option>
+                    </select>
+            <input type="text" placeholder="Digite o modelo" id="modelo">
+            <br></br>
+            <input type="text" placeholder="Digite o km" id="km">
+            <br>
+            <input type="text" placeholder="Digite a gasolina" id="gaso">
+            <br></br>
+            <input type="button" value="CALCULAR" onclick="calcConsumo()">
+        <span id="consumo"></span>
+            <div class="caixa">
+                    <p id="paragraph1">Consumo maior que 20km/l - Extremamente econômico</p>
+                    <p id="paragraph2">Consumo maior que 12km/l porém menor que 20km/l - Econômico</p>
+                    <p id="paragraph3">Consumo maior que 8km/l porém menor que 12km/l - Normal</p>
+                    <p id="paragraph4">Consumo menor que 8km/l - Alto Consumo</p>
+    </div>
+    </div>
+    <script src="./Motor.js"></script>
+</body>
+</html>
